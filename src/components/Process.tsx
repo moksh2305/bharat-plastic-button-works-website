@@ -1,3 +1,6 @@
+'use client';
+
+import { motion } from 'framer-motion';
 import styles from './Process.module.css';
 
 export default function Process() {
@@ -18,7 +21,13 @@ export default function Process() {
       </div>
       
       <div className={`container ${styles.content}`}>
-        <div className={styles.header}>
+        <motion.div 
+          className={styles.header}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-10%" }}
+          transition={{ duration: 0.6 }}
+        >
           <p className={styles.subtitle}>OUR PROCESS</p>
           <h2>PRECISION<br/>AT EVERY STAGE.</h2>
           <p className={styles.description}>
@@ -28,17 +37,33 @@ export default function Process() {
             a defect-free range at industrial scale.
           </p>
           <button className="btn btn-outline" style={{ borderColor: 'white', color: 'white' }}>Take a Virtual Tour &rarr;</button>
-        </div>
+        </motion.div>
         
-        <div className={styles.timeline}>
+        <motion.div 
+          className={styles.timeline}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-10%" }}
+          variants={{
+            visible: { transition: { staggerChildren: 0.1 } },
+            hidden: {}
+          }}
+        >
           {steps.map((step) => (
-            <div key={step.number} className={styles.step}>
+            <motion.div 
+              key={step.number} 
+              className={styles.step}
+              variants={{
+                hidden: { opacity: 0, x: 20 },
+                visible: { opacity: 1, x: 0, transition: { duration: 0.5 } }
+              }}
+            >
               <div className={styles.stepNumber}>{step.number}</div>
               <h4>{step.title}</h4>
               <p>{step.desc}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

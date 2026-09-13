@@ -1,3 +1,6 @@
+'use client';
+
+import { motion } from 'framer-motion';
 import styles from './Materials.module.css';
 
 export default function Materials() {
@@ -31,7 +34,13 @@ export default function Materials() {
   return (
     <section id="materials" className={styles.materialsSection}>
       <div className={`container ${styles.container}`}>
-        <div className={styles.headerInfo}>
+        <motion.div 
+          className={styles.headerInfo}
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-10%" }}
+          transition={{ duration: 0.6 }}
+        >
           <p className={styles.subtitle}>OUR MATERIALS</p>
           <h2>ENGINEERED POLYMERS FOR REAL-WORLD DEMANDS.</h2>
           <p className={styles.description}>
@@ -40,20 +49,36 @@ export default function Materials() {
             Customized to your specification.
           </p>
           <a href="#products" className={styles.exploreLink}>&rarr; Explore Materials</a>
-        </div>
+        </motion.div>
         
-        <div className={styles.grid}>
+        <motion.div 
+          className={styles.grid}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-10%" }}
+          variants={{
+            visible: { transition: { staggerChildren: 0.15 } },
+            hidden: {}
+          }}
+        >
           {materials.map((mat) => (
-            <div key={mat.number} className={styles.card}>
+            <motion.div 
+              key={mat.number} 
+              className={styles.card}
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+              }}
+            >
               <img src={mat.image} alt={mat.title} className={styles.image} />
               <div className={styles.cardContent}>
                 <h3>{mat.title}</h3>
                 <p>{mat.description}</p>
                 <span className={styles.number}>{mat.number}</span>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
