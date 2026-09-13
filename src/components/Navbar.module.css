@@ -1,0 +1,53 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-secondary);
+  padding: var(--spacing-sm) 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    background-color: rgba(10, 10, 10, 0.95);
+  }
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.brandName {
+  letter-spacing: 0.05em;
+}
+
+.navLinks {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.navLinks a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navLinks a:hover {
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none; /* We can implement a mobile menu later if needed */
+  }
+}

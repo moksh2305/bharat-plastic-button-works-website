@@ -1,0 +1,106 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-primary);
+  color: var(--background);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-md);
+  color: var(--text-muted);
+}
+
+.title {
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 1.1;
+  margin-bottom: var(--spacing-md);
+  color: var(--background);
+}
+
+.description {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin-bottom: var(--spacing-lg);
+  color: #a1a1aa;
+}
+
+.actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+/* Trust Banner */
+.trustBanner {
+  background-color: var(--background);
+  color: var(--foreground);
+  padding: var(--spacing-xl) 0;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.trustHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: var(--spacing-lg);
+  gap: var(--spacing-md);
+}
+
+.trustHeader h2 {
+  font-size: 2rem;
+  max-width: 400px;
+  margin: 0;
+}
+
+.trustHeader p {
+  max-width: 400px;
+  color: var(--text-muted);
+}
+
+.clientGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.clientCard {
+  padding: var(--spacing-md);
+  background-color: var(--color-secondary);
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.clientCard:hover {
+  transform: translateY(-5px);
+}
+
+.clientCard h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.clientCard p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .trustHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
