@@ -4,11 +4,37 @@ import { motion } from 'framer-motion';
 import styles from './Products.module.css';
 
 export default function Products() {
-  const products = [
-    { title: 'LDPE Garbage Bags', desc: 'Premium, fully customizable bags for domestic and commercial use.', image: 'https://images.unsplash.com/photo-1605600659908-0ef719419d41?auto=format&fit=crop&q=80&w=600&h=600' },
-    { title: 'LDPE Membrane Sheet', desc: 'High-grade sheets for PCC construction in multiple thicknesses.', image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=600&h=600' },
-    { title: 'Barricade Tapes', desc: 'India\'s largest manufacturer of warning tapes.', image: 'https://images.unsplash.com/photo-1596700683070-5aa60b29cefa?auto=format&fit=crop&q=80&w=600&h=600' },
-    { title: 'Cargo Pallet Covers', desc: 'Durable protection for international cargo and shipping.', image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=600&h=600' }
+  const productCategories = [
+    { 
+      title: 'Garbage & Waste Management', 
+      desc: 'Biodegradable, Biohazard, Black, and LD Garbage Bags for domestic, restaurant, and industrial use.', 
+      image: 'https://images.unsplash.com/photo-1605600659908-0ef719419d41?auto=format&fit=crop&q=80&w=600&h=600' 
+    },
+    { 
+      title: 'Sheets & Rolls', 
+      desc: 'LDPE Membrane Sheets for PCC construction, Barsati Plastic Sheets, and versatile plastic rolls.', 
+      image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=600&h=600' 
+    },
+    { 
+      title: 'Packaging Materials', 
+      desc: 'Stretch & Shrink Films, Zip Lock Poly Bags, Self-Adhesive PVC Bags, and Air Bubble Covers.', 
+      image: 'https://images.unsplash.com/photo-1606189934177-d6e27163013d?auto=format&fit=crop&q=80&w=600&h=600' 
+    },
+    { 
+      title: 'Cargo Pallet Covers', 
+      desc: 'Heavy-duty durable protection for domestic and international cargo shipping.', 
+      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=600&h=600' 
+    },
+    { 
+      title: 'Warning / Barrication Tapes', 
+      desc: 'High-visibility safety and warning tapes for construction sites and hazard zones.', 
+      image: 'https://images.unsplash.com/photo-1596700683070-5aa60b29cefa?auto=format&fit=crop&q=80&w=600&h=600' 
+    },
+    { 
+      title: 'PVC Tarpaulins & Covers', 
+      desc: 'Waterproof PVC Tarpaulins and durable Catering Table Covers for extreme outdoor use.', 
+      image: 'https://images.unsplash.com/photo-1610484558509-f6e07b8b7e51?auto=format&fit=crop&q=80&w=600&h=600' 
+    }
   ];
 
   return (
@@ -22,13 +48,13 @@ export default function Products() {
           transition={{ duration: 0.6 }}
         >
           <div>
-            <p className={styles.subtitle}>OUR PRODUCTS</p>
-            <h2>PACKAGING SOLUTIONS<br/>FOR EVERY INDUSTRY.</h2>
+            <p className={styles.subtitle}>OUR CATALOG</p>
+            <h2>COMPREHENSIVE PACKAGING<br/>SOLUTIONS.</h2>
           </div>
           <p className={styles.description}>
-            From bulk packaging to customized flexible solutions, we manufacture products that perform in the toughest conditions.
+            From biodegradable garbage bags to heavy-duty construction membrane sheets, our extensive product line is customizable to your specific requirements.
             <br/><br/>
-            <a href="#all-products" className="btn btn-primary">&rarr; View All Products</a>
+            <a href="#contact" className="btn btn-primary">&rarr; Request a Quote</a>
           </p>
         </motion.div>
         
@@ -42,7 +68,7 @@ export default function Products() {
             hidden: {}
           }}
         >
-          {products.map((prod, index) => (
+          {productCategories.map((prod, index) => (
             <motion.div 
               key={index} 
               className={styles.productCard}
