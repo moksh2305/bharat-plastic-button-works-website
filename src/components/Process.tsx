@@ -16,7 +16,7 @@ export default function Process() {
   return (
     <section id="process" className={styles.processSection}>
       <div className={styles.backgroundWrapper}>
-        <img src="https://placehold.co/1920x800/1a1a1a/333333?text=Manufacturing+Plant" alt="Manufacturing Plant" className={styles.bgImage} />
+        <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=1920&h=800" alt="Manufacturing Plant" className={styles.bgImage} />
         <div className={styles.overlay}></div>
       </div>
       

@@ -39,7 +39,7 @@ export default function Leadership() {
               visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
             }}
           >
-            <img src="https://placehold.co/400x500/333333/cccccc?text=Mr.+Bharat+Shah" alt="Mr. Bharat Shah" className={styles.image} />
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=500" alt="Mr. Bharat Shah" className={styles.image} />
             <div className={styles.info}>
               <h3>Mr. Bharat Shah</h3>
               <p className={styles.title}>Founder</p>
@@ -53,7 +53,7 @@ export default function Leadership() {
               visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
             }}
           >
-            <img src="https://placehold.co/400x500/333333/cccccc?text=Mr.+Nirav+Shah" alt="Mr. Nirav Shah" className={styles.image} />
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=500" alt="Mr. Nirav Shah" className={styles.image} />
             <div className={styles.info}>
               <h3>Mr. Nirav Shah</h3>
               <p className={styles.title}>Director</p>

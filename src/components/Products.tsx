@@ -5,10 +5,10 @@ import styles from './Products.module.css';
 
 export default function Products() {
   const products = [
-    { title: 'LDPE Garbage Bags', desc: 'Premium, fully customizable bags for domestic and commercial use.', image: 'https://placehold.co/600x600/e2e8f0/64748b?text=Garbage+Bags' },
-    { title: 'LDPE Membrane Sheet', desc: 'High-grade sheets for PCC construction in multiple thicknesses.', image: 'https://placehold.co/600x600/e2e8f0/64748b?text=Membrane+Sheet' },
-    { title: 'Barricade Tapes', desc: 'India\'s largest manufacturer of warning tapes.', image: 'https://placehold.co/600x600/e2e8f0/64748b?text=Warning+Tapes' },
-    { title: 'Cargo Pallet Covers', desc: 'Durable protection for international cargo and shipping.', image: 'https://placehold.co/600x600/e2e8f0/64748b?text=Pallet+Covers' }
+    { title: 'LDPE Garbage Bags', desc: 'Premium, fully customizable bags for domestic and commercial use.', image: 'https://images.unsplash.com/photo-1605600659908-0ef719419d41?auto=format&fit=crop&q=80&w=600&h=600' },
+    { title: 'LDPE Membrane Sheet', desc: 'High-grade sheets for PCC construction in multiple thicknesses.', image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=600&h=600' },
+    { title: 'Barricade Tapes', desc: 'India\'s largest manufacturer of warning tapes.', image: 'https://images.unsplash.com/photo-1596700683070-5aa60b29cefa?auto=format&fit=crop&q=80&w=600&h=600' },
+    { title: 'Cargo Pallet Covers', desc: 'Durable protection for international cargo and shipping.', image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=600&h=600' }
   ];
 
   return (

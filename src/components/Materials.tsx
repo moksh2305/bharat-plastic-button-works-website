@@ -9,25 +9,25 @@ export default function Materials() {
       title: 'LD',
       description: 'Lightweight, Reliable, Versatile.',
       number: '01',
-      image: 'https://placehold.co/400x300/e2e8f0/64748b?text=LD+Polymer'
+      image: 'https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?auto=format&fit=crop&q=80&w=400&h=300'
     },
     {
       title: 'LLDPE',
       description: 'Flexibility for demanding applications.',
       number: '02',
-      image: 'https://placehold.co/400x300/e2e8f0/64748b?text=LLDPE+Polymer'
+      image: 'https://images.unsplash.com/photo-1532153259564-bd51214cb831?auto=format&fit=crop&q=80&w=400&h=300'
     },
     {
       title: 'HM-HDPE',
       description: 'High strength, Higher performance.',
       number: '03',
-      image: 'https://placehold.co/400x300/e2e8f0/64748b?text=HM-HDPE+Polymer'
+      image: 'https://images.unsplash.com/photo-1611078810793-18151522a945?auto=format&fit=crop&q=80&w=400&h=300'
     },
     {
       title: 'PVC',
       description: 'Durable, Multi-purpose.',
       number: '04',
-      image: 'https://placehold.co/400x300/e2e8f0/64748b?text=PVC+Polymer'
+      image: 'https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?auto=format&fit=crop&q=80&w=400&h=300'
     }
   ];
 

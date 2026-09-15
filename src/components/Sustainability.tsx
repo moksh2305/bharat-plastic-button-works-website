@@ -28,8 +28,8 @@ export default function Sustainability() {
           viewport={{ once: true, margin: "-10%" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          {/* Using a placeholder for the leaf/sustainability visual */}
-          <img src="https://placehold.co/600x400/f4f4f5/2c5e3b?text=Sustainability+Leaf" alt="Sustainability" className={styles.image} />
+          {/* Using a nature/sustainability visual */}
+          <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&q=80&w=600&h=400" alt="Sustainability" className={styles.image} />
         </motion.div>
       </div>
     </section>
